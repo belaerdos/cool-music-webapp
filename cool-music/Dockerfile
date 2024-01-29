@@ -14,6 +14,9 @@ COPY build.gradle settings.gradle gradlew /app/
 COPY gradle /app/gradle
 COPY src /app/src
 
+# Copy the .env file
+COPY .env /app
+
 # Build the application
 RUN ./gradlew bootJar --no-daemon
 
