@@ -5,10 +5,9 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.springframework.boot.autoconfigure.web.WebProperties;
 
 @Entity
-@Table(name = "cool_music")
+@Table(name = "music")
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
