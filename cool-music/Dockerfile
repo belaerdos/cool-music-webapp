@@ -10,7 +10,7 @@ RUN apt-get update && \
 WORKDIR /app
 
 # Copy only necessary files for Gradle build
-COPY build.gradle settings.gradle gradlew /app/
+COPY build.gradle.old settings.gradle gradlew /app/
 COPY gradle /app/gradle
 COPY src /app/src
 
